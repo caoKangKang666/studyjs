@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    /* 
+    批量创建对象：
+    工厂方法创建：
+    function createPersom(name,age) {
+
+      var obj =new Object();
+      obj.name=name;
+      obj.age=age;
+
+      return obj;
+    }
+    
+    var obj2 =createPersom('猪八戒'，18);
+    
+
+    这种方法创建的都是Object，无法区分多种对象，狗，人。所以不常用
+
+
+
+    创建一个构造函数，就是一个普通的函数，不同的是首字母大写。
+    一出现new会创建一个新的对象。
+
+    function Person(name,age) {
+      this.name=name;
+      this.age=age;
+    }
+    var per =new Person('猪八戒'，18)
+    
+
+    this的三种情况：
+    1.以函数形式调用时，this是window
+    2.当以方法的形式调用时，谁调用方法this就是谁
+    3.在构造函数中，this就是新创建的那个对象
+
+    构造函数的方法每次创建都创建一个新的，为了避免这种情况，可以将构造函数的方法加的原型上，共享方法
+    每创建一个函数，都会给其添加一个prototype属性
+    如果就是普通函数，原型属性没有任何意义。如果是构造函数来创建对象，才具有意义。
+    可以把对象共有的方法和属性添加到原型中
+
+
+     */
+
+
+  </script>
+</body>
+</html>
